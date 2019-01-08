@@ -1,4 +1,3 @@
-VENV/
 backend/__pycache__/
 houses/__pycache__/
 db.sqlite3
