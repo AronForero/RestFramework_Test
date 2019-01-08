@@ -1,2 +1,3 @@
 VENV/
-
+backend/__pycache__/
+db.sqlite3

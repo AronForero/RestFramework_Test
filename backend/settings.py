@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '4=x_qh!j+yp66k&)^k3u9--)oi7r(rqdo4+v*lh9$t4c+xc!b-'
+SECRET_KEY = 's6=vvgodg9l$7=e+8h(c!&wpy3*-+7taf1atxy(zfb=+erp)2a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'django_rest_swagger',
+    'houses',
 ]
 
 MIDDLEWARE = [
@@ -77,12 +77,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'inmobilio1'),
-        'USER': 'admin',
-        'PASSWORD': '123456Admin',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
