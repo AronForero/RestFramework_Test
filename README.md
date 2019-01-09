@@ -35,7 +35,11 @@ para una base de datos que contenga 4 tablas (inmueble, general, interior, exter
 }
 ~~~
 
-La base de datos se implemento con PostgreSQL, en el puerto 5433 (por defecto 5432, si es necesario cambiar el puerto en backend/settings.py), con el usuario 'admin', contraseña '123456' y una base de datos llamada 'inmobilio'.  
+La base de datos se implemento con PostgreSQL con las siguientes caracteristicas:  
+* PORT/Puerto: 5433 (por defecto 5432, si es necesario cambiar el puerto en backend/settings.py)
+* USER/Usuario: 'admin'
+* PASSWORD/Contraseña: '123456'
+* NAME/Nombre de la base de datos: 'inmobilio'.
 La pagina se desarrollo con las implementaciones de Django Restframework, de esta manera se utilizo muy poco codigo
 y se dieron las funciones de:
 * Listar inmuebles
@@ -56,7 +60,7 @@ de la prueba.
 
 Por lo tanto el proyecto se desarrollo de cero, y se obtuvo un nuevo archivo *Pipfile* y por supuesto un nuevo archivo *Pipfile.lock*.
 
-> Realmente nunca habia usado ni cacharreado nada con docker y tuve ciertos problemas por mi inexperiencia y mi desconocimiento de la herramienta por esta razon no implemente el proyecto dentro de un contenedor sino que lo deje simplemente en el entorno virtual **Pipenv**,  
+> "Realmente nunca habia usado, ni cacharreado nada que tuviera que ver con docker, y tuve ciertos problemas por mi inexperiencia y mi desconocimiento de la herramienta, por esta razon no implemente el proyecto dentro de un contenedor, sino, que lo deje simplemente en el entorno virtual **Pipenv**."
 
 No se entrego un archivo Dockerfile pero de igual manera se genero un archivo requirements.txt
 
