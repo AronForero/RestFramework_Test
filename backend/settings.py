@@ -75,33 +75,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-"""
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('DATABASE_HOST'),
-        'PORT': os.getenv('DATABASE_PORT'),
-    }
-}
-
-"""
+# La base de datos que se uso tenia como nombre inmobilio, con un usuario llamado admin, y contraseña 123456
+# NOTA: El puerto que se uso fue el 5433 en vez del puerto por defecto que es el 5432.
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'inmobilio',
-            'USER': 'aronf',
-            'PASSWORD': 'arreforaf123',
+            'USER': 'admin',
+            'PASSWORD': '123456',
             'HOST': 'localhost',
             'PORT': '5433',
             }
