@@ -49,6 +49,9 @@ y se dieron las funciones de:
 * Crear Inmueble
 * Eliminar Inmueble
 
+Para la **documentacion** (ademas de los comentarios dentro del codigo) se realizo una sencilla implementacion de *Django-Rest-Swagger* la cual se puede observar en el endpoint:
+- api/doc  
+
 Todo la implementacion se realizo dentro de un entorno virtual tipo **Pipenv**.
 
 ### Problemas encontrados
