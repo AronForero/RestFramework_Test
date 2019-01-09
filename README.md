@@ -41,7 +41,7 @@ La base de datos se implemento con PostgreSQL con las siguientes caracteristicas
 * PASSWORD/Contraseña: '123456'
 * NAME/Nombre de la base de datos: 'inmobilio'.  
 
-La pagina se desarrollo con las implementaciones de Django Restframework, de esta manera se utilizo muy poco codigo
+La pagina se desarrollo con las abstracciones de Django Restframework, de esta manera se utilizo muy poco codigo
 y se dieron las funciones de:
 * Listar inmuebles
 * Detallar inmueble individual
