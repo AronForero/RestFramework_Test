@@ -39,7 +39,8 @@ La base de datos se implemento con PostgreSQL con las siguientes caracteristicas
 * PORT/Puerto: 5433 (por defecto 5432, si es necesario cambiar el puerto en backend/settings.py)
 * USER/Usuario: 'admin'
 * PASSWORD/Contraseña: '123456'
-* NAME/Nombre de la base de datos: 'inmobilio'.
+* NAME/Nombre de la base de datos: 'inmobilio'.  
+
 La pagina se desarrollo con las implementaciones de Django Restframework, de esta manera se utilizo muy poco codigo
 y se dieron las funciones de:
 * Listar inmuebles
