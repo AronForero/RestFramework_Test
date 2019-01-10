@@ -15,8 +15,8 @@ services:
         migration:
                 build: .
                 image: python:3
-                command: python3 manage.py makemigrations houses
-                command: python3 manage.py migrate
+                command: python3 /code/manage.py makemigrations houses
+                command: python3 /code/manage.py migrate
                 volumes:
                         - .:/code
                 depends_on:
