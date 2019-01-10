@@ -14,7 +14,7 @@ router.register(r'exterior', views.exteriorViewSet)
 
 #creamos la instancia de swagger para automatizar la documentacion
 schema_view = get_swagger_view(title='Pastebin API')
-
+#router.register(r'api/doc/swagger', schema_view)
 #Creamos nuestro patron de urls
 urlpatterns = [
     path('api/doc/', schema_view),
